@@ -27,7 +27,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6xU-B0-5KA">
-                                <frame key="frameInset" minX="16" minY="465" width="150" height="30"/>
+                                <frame key="frameInset" minX="16" minY="465" width="331" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fy9-mF-Mgu">
                                         <state key="normal" title="7"/>
@@ -59,7 +59,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5Ba-yh-kWk">
-                                <frame key="frameInset" minX="16" minY="503" width="150" height="30"/>
+                                <frame key="frameInset" minX="16" minY="503" width="331" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQR-US-032">
                                         <state key="normal" title="4"/>
@@ -88,7 +88,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oks-5a-hLu">
-                                <frame key="frameInset" minX="16" minY="541" width="150" height="30"/>
+                                <frame key="frameInset" minX="16" minY="541" width="331" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jW6-rN-HoS">
                                         <state key="normal" title="1"/>
@@ -128,11 +128,13 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.43863391540000002" green="0.9104606744" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="8Dw-vZ-YSl" firstAttribute="leading" secondItem="bpK-S9-Guz" secondAttribute="leading" constant="2" id="MFD-Df-mFe"/>
                                     <constraint firstAttribute="width" constant="300" id="XDh-o2-79A"/>
+                                    <constraint firstAttribute="trailing" secondItem="8Dw-vZ-YSl" secondAttribute="trailing" constant="2" id="dgX-wB-LdK"/>
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eO1-KK-QTS">
-                                <frame key="frameInset" minX="16" minY="579" width="162" height="30"/>
+                                <frame key="frameInset" minX="16" minY="579" width="331" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1LP-22-Yzw" userLabel="0">
                                         <state key="normal" title="c"/>
@@ -161,9 +163,13 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GvE-45-4S5">
-                                <frame key="frameInset" minX="18" minY="427" width="160" height="30"/>
+                                <frame key="frameInset" minX="18" minY="427" width="331" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xhm-MQ-l4S">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="Hpq-bJ-dle"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="Up9-hg-ITo"/>
+                                        </constraints>
                                         <state key="normal" title="avg"/>
                                         <connections>
                                             <action selector="avg:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TaN-fO-qbt"/>
@@ -195,16 +201,21 @@
                             <constraint firstItem="5Ba-yh-kWk" firstAttribute="top" secondItem="6xU-B0-5KA" secondAttribute="bottom" id="3ei-Lu-cRU"/>
                             <constraint firstItem="6xU-B0-5KA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="AHS-Iz-wlo"/>
                             <constraint firstItem="oks-5a-hLu" firstAttribute="top" secondItem="5Ba-yh-kWk" secondAttribute="bottom" id="DXT-u9-nKf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eO1-KK-QTS" secondAttribute="trailing" constant="2" id="EaL-IN-SJd"/>
                             <constraint firstItem="GvE-45-4S5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="GIu-yx-pBb"/>
                             <constraint firstItem="eO1-KK-QTS" firstAttribute="top" secondItem="oks-5a-hLu" secondAttribute="bottom" id="HjA-OG-FEr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6xU-B0-5KA" secondAttribute="trailing" constant="2" id="LxB-nq-K3n"/>
                             <constraint firstItem="oks-5a-hLu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="QKE-2G-qKK"/>
                             <constraint firstItem="6xU-B0-5KA" firstAttribute="top" secondItem="GvE-45-4S5" secondAttribute="bottom" id="TBa-uy-E9u"/>
                             <constraint firstAttribute="trailingMargin" secondItem="o0z-yC-UOz" secondAttribute="trailing" constant="10" id="WNA-uz-r3F"/>
                             <constraint firstItem="bpK-S9-Guz" firstAttribute="top" secondItem="eO1-KK-QTS" secondAttribute="bottom" id="Z9u-Xm-1IT"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bpK-S9-Guz" secondAttribute="bottom" constant="15" id="a7l-6V-RuG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GvE-45-4S5" secondAttribute="trailing" constant="2" id="aqc-U5-O3T"/>
                             <constraint firstItem="o0z-yC-UOz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="24" id="bMw-5m-clY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oks-5a-hLu" secondAttribute="trailing" constant="2" id="c9V-jL-ouu"/>
                             <constraint firstItem="bpK-S9-Guz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="g6x-GB-vee"/>
                             <constraint firstItem="eO1-KK-QTS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="hBF-ug-ETl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5Ba-yh-kWk" secondAttribute="trailing" constant="2" id="sEa-eb-aWy"/>
                             <constraint firstItem="5Ba-yh-kWk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="yPZ-c4-YMY"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bpK-S9-Guz" secondAttribute="bottom" constant="10" id="ySu-8B-bUf"/>
                         </constraints>
