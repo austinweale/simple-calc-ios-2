@@ -26,6 +26,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var textArea: UILabel!
     
     var hasOperator = false
+		var history = [String]()
 	
 	
 		//number related buttons function
@@ -57,11 +58,18 @@ class ViewController: UIViewController {
         self.textArea.text = ""
     }
 	
+	func logChoice(equation: String, type: String, result: String){
+		history.append("\(equation) \(type) \(result)")
+	}
+	
 		//for equals button: parses the input area and does the operation. displays answer in the input area 
 		//so you can use the answer for more operations
     @IBAction func enterCommand(_ sender: AnyObject) {
+			
         let expression = (self.textArea.text!).trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
         let expressionArray = expression.components(separatedBy: " ")
+			
+			
 			
         clear()
         if(expressionArray.count == 3){
@@ -85,6 +93,7 @@ class ViewController: UIViewController {
                 result = -1
             }
             self.textArea.text = "\(result)"
+					logChoice(equation: expression, type: "=", result: "\(result)")
 			}
     }
 	
